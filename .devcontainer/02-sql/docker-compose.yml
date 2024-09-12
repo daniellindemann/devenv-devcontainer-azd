@@ -1,0 +1,39 @@
+version: '3'
+
+name: devcontainer_devenv-devcontainer-azd-02
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - ../../..:/workspaces:cached
+
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity
+
+    # Runs app on the same network as the database container, allows "forwardPorts" in devcontainer.json function.
+    network_mode: service:db
+
+    # Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+    # user: root
+
+    # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
+    # (Adding the "ports" property to this file will not forward from a Codespace.)
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-CU14-ubuntu-22.04  # pin to specific version
+    user: root  # easiest way to fix error "ERROR: Setup FAILED copying system data file 'C:\templatedata\master.mdf' to '/var/opt/mssql/data/master.mdf':  5(Access is denied.)", see https://stackoverflow.com/questions/65601077/unable-to-run-sql-server-2019-docker-with-volumes-and-get-error-setup-failed-co
+    restart: unless-stopped
+    ports:
+      - "1433:1433"
+    volumes:
+      - ../../.devcontainer-files/mssql-data:/var/opt/mssql/data
+    environment:
+      SA_PASSWORD: P@ssw0rd
+      ACCEPT_EULA: Y
+      MSSQL_IP_ADDRESS: "0.0.0.0"
+
+    # Add "forwardPorts": ["db:1433"] to **devcontainer.json** to forward MSSQL locally.
+    # (Adding the "ports" property to this file will not forward from a Codespace.)

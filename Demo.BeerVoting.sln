@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D8CF0DA5-4A19-4901-8F6A-187DABC24EB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.BeerVoting.Backend", "src\Demo.BeerVoting.Backend\Demo.BeerVoting.Backend.csproj", "{A07A5CE8-BBB6-4D90-9D93-48A5A0F2988C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.BeerVoting.Frontend", "src\Demo.BeerVoting.Frontend\Demo.BeerVoting.Frontend.csproj", "{C6EB0AEF-665B-4375-82DA-C43390AC039F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A07A5CE8-BBB6-4D90-9D93-48A5A0F2988C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07A5CE8-BBB6-4D90-9D93-48A5A0F2988C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07A5CE8-BBB6-4D90-9D93-48A5A0F2988C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07A5CE8-BBB6-4D90-9D93-48A5A0F2988C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EB0AEF-665B-4375-82DA-C43390AC039F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EB0AEF-665B-4375-82DA-C43390AC039F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EB0AEF-665B-4375-82DA-C43390AC039F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EB0AEF-665B-4375-82DA-C43390AC039F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A07A5CE8-BBB6-4D90-9D93-48A5A0F2988C} = {D8CF0DA5-4A19-4901-8F6A-187DABC24EB1}
+		{C6EB0AEF-665B-4375-82DA-C43390AC039F} = {D8CF0DA5-4A19-4901-8F6A-187DABC24EB1}
+	EndGlobalSection
+EndGlobal
