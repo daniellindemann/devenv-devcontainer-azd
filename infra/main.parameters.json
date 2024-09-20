@@ -59,7 +59,7 @@
         "value": "${SQL_SERVER_ADMIN_LOGIN=sqladmin}"
       },
       "sqlServerAdminPassword": {
-        "value": "${SQL_SERVER_ADMIN_LOGIN=p@ssw0rd!}"
+        "value": "${SQL_SERVER_ADMIN_PASSWORD=p@ssw0rd!}"
       }
     }
 }

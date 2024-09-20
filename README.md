@@ -15,9 +15,13 @@ Code of my talk "Zeitfresser gebändigt: Optimierung von Entwicklungsumgebungen"
 
 | Environment name | Configuration |
 | ---------------- | ------------- |
-| *"C# (.NET)* | Ubuntu 22.04 (Jammy Jellyfish), In-memory database |
+| *C# (.NET)* | Ubuntu 22.04 (Jammy Jellyfish), In-memory database |
 | *C# (.NET) and MS SQL* | Ubuntu 22.04 (Jammy Jellyfish), Dedicated SQL server as container on Docker Compose stack  |
 | *C# (.NET) with azd* | Ubuntu 22.04 (Jammy Jellyfish), In-memory database, Docker-in-Docker, Azure Developer CLI (azd) and other features |
+
+## Slides
+
+- [Zeitfresser gebändigt - Optimierung von Entwicklungsumgebungen](https://speakerdeck.com/daniellindemann/zeitfresser-gebandigt-optimierung-von-entwicklungsumgebungen)
 
 ## Demos
 
